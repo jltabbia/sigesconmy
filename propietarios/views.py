@@ -20,12 +20,10 @@ class crear(View):
             'form':form
         }
         return render(request,'propietarios/crear.html',context=context)
+    
     def post(self,request,*args,**kwargs):
         form = PropietarioForm(request.POST)
         if form.is_valid():
             propietario = form.save()
             form = PropietarioForm()
-        return redirect('/propietarios/')
-from django.shortcuts import render
-
-# Create your views here.
+        return redirect('propietarios')
