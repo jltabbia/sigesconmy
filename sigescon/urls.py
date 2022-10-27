@@ -25,5 +25,5 @@ urlpatterns = [
     path('',HomeView,name='index'),
     path('accounts/', include('django.contrib.auth.urls')),
     path('salir/',cerrarSesion,name='salir'),
-    path('propietarios',include('propietarios.urls', namespace='propietarios'))
+    path('propietarios', include('propietarios.urls', namespace='propietarios'))
 ]

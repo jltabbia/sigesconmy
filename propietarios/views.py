@@ -26,4 +26,4 @@ class crear(View):
         if form.is_valid():
             propietario = form.save()
             form = PropietarioForm()
-        return redirect('propietarios')
+        return redirect('/propietarios')
