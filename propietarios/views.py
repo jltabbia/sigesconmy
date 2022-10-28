@@ -11,7 +11,6 @@ class PropietariosHomeView(View):
         
         return render(request,'propietarios/index.html',{'propietarios':propietarios})
     
-
 class crear(View):
     #if request.method == "GET":
     def get(self,request,*args,**kwargs):
