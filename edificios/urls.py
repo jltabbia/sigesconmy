@@ -6,7 +6,7 @@ app_name='edificios'
 urlpatterns = [
     path('', EdificiosHomeView.as_view(), name='index'),
     path('crear',crear.as_view(),name="crear"),
+    path('/listarpdf/<int:id>',ToPDF,name='listarpdf'),
     # path('eliminar/<int:id>', eliminar),
     # path('editar/<int:id>',editar),
-
 ]
