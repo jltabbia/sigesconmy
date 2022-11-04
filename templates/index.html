@@ -9,7 +9,8 @@ Gestión de Consorcios
         <div class='card-body'>
     <p class="h2 mb-3 mt-3">Sistema de Gestión de Consorcios</p>
     <img src="{% static '/img/edificio.png' %}" width="150px" class="mb-5" >
-    <p class="h5 mb-3 mt-3">{{ edificio.nombre }}</p>
+    <p class="h5 mb-3 mt-3">{{ edificio.nombre }} - {{ edificio.domicilio}}</p>
+    <input type="hidden" name='id_edificio' value="{{ edificio.id}}">
         </div>
     </div>
 </div>

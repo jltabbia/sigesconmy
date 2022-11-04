@@ -10,7 +10,7 @@ class Edificios(models.Model):
     administrador=models.ForeignKey("usuario.Usuario", verbose_name= ("Administrador"), on_delete=models.CASCADE)
 
     def __str__ (self):
-        return self.nombre
+        return '%s, %s' % (self.nombre, self.domicilio)
     
     class Meta:
         db_table = 'edificios'

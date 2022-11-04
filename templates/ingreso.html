@@ -45,7 +45,7 @@
         $(document).ready(function() {
                     
         $("#edificio").change(function() {
-            
+            $("#aceptar").empty()
             $("#aceptar").append("<a class='btn btn-primary btn-sm mb-3 mt-3' href='home/"+$("#edificio").val()+"'>Aceptar</a><a class='btn btn-danger btn-sm mb-3 mt-3' href='{% url 'salir' %}'>Cancelar</a>");
         }).trigger("change");
     });

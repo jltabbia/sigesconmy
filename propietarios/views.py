@@ -8,8 +8,8 @@ from .models import Propietarios
 class PropietariosHomeView(View):
     def get(self,request,*args,**kwargs):
         propietarios=Propietarios.objects.all()
-        
-        return render(request,'propietarios/index.html',{'propietarios':propietarios})
+        edificio = id_edificio
+        return render(request,'propietarios/index.html',{'propietarios':propietarios,'edificio':edificio})
     
 class crear(View):
     #if request.method == "GET":
