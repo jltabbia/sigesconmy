@@ -23,7 +23,7 @@ def ingreso(request,id):
             'nombre':e.nombre,
             'domicilio':e.domicilio,
         }
-    context={
+        context={
         'edificio':datos
     }
     return render(request,'index.html',context=context)

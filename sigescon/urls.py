@@ -20,6 +20,7 @@ from django.contrib.auth.decorators import login_required
 from .views import *
 from propietarios.urls import *
 from edificios.urls import *
+from movimientos.urls import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,5 +30,6 @@ urlpatterns = [
     path('salir/',cerrarSesion,name='salir'),
     path('propietarios', include('propietarios.urls', namespace='propietarios')),
     path('edificios', include('edificios.urls', namespace='edificios')),
+    path('movimientos', include('movimientos.urls', namespace='movimientos')),
     
 ]
