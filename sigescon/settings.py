@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+from psycopg2 import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -13,6 +14,7 @@ SECRET_KEY = 'django-insecure-6_3o1ymg)#mt)us0!=ll181x%hfei95jk+#(4#z9&gbbo5gt=2
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
 
 ALLOWED_HOSTS = ['*']
 
@@ -73,6 +75,7 @@ AUTH_USER_MODEL = 'usuario.Usuario'
 
 DATABASES = {
     'default': {
+<<<<<<< HEAD
         # 'ENGINE': 'django.db.backends.mysql',
         # 'NAME': 'sigescon',
         # 'HOST': 'localhost',
@@ -85,6 +88,14 @@ DATABASES = {
         'PORT': '5432',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
+=======
+       'ENGINE': 'django.db.backends.postgresql_psycopg2',
+       'NAME': 'sigescon',
+       'USER': 'postgres',
+       'PASSWORD': 'postgres',
+       'HOST': 'localhost',
+       'PORT': '5432',
+>>>>>>> 1c71acfc4e421a2a797cfa8ed15e0495bd4e0c32
     }
 }
 
