@@ -3,7 +3,6 @@ from django.views.generic import View
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from edificios.models import Edificios
-import variables
 
 # Create your views here.
 @login_required()
@@ -25,8 +24,6 @@ def ingreso(request,id):
             'domicilio':e.domicilio,
         }
     
-    variables.id_edificio = datos['id']
-    print(variables.id_edificio)       
     context={
         'edificio':datos
     }
