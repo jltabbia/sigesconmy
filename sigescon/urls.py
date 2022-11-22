@@ -24,8 +24,8 @@ from movimientos.urls import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',HomeView,name='index'),
-    path('home/<int:id>',ingreso,name='home'),
+    path('home',HomeView,name='index'),
+   # path('home/<int:id>',ingreso,name='home'),
     path('accounts/', include('django.contrib.auth.urls')),
     path('salir/',cerrarSesion,name='salir'),
     path('propietarios', include('propietarios.urls', namespace='propietarios')),

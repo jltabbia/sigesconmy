@@ -9,24 +9,7 @@ from edificios.models import Edificios
 
 
 def HomeView(request):
-    edificios=Edificios.objects.filter(administrador=request.user) 
-    return render(request,'ingreso.html',{'edificios':edificios})
-
-def ingreso(request,id):
-    
-    edificio=Edificios.objects.filter(id=id)
- 
-    for e in edificio:
-    
-        datos={
-            'id':e.id,
-            'nombre':e.nombre,
-            'domicilio':e.domicilio,
-        }
-        context={
-        'edificio':datos
-    }
-    return render(request,'index.html',context=context)
+    return render(request,'index.html',{})
 
 def cerrarSesion(request):
     logout(request)
