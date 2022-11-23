@@ -76,19 +76,13 @@ AUTH_USER_MODEL = 'usuario.Usuario'
 DATABASES = {
     'default': {
 
-        # 'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': 'sigescon',
-        # 'HOST': 'localhost',
-        # 'PORT': '3307',
-        # 'USER': 'root',
-        # 'PASSWORD': 'mysqlroot',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'sigescon',
+        'HOST': 'localhost',
+        'PORT': '3307',
+        'USER': 'root',
+        'PASSWORD': 'mysqlroot',
 
-       'ENGINE': 'django.db.backends.postgresql_psycopg2',
-       'NAME': 'sigescon',
-       'USER': 'postgres',
-       'PASSWORD': 'postgres',
-       'HOST': 'localhost',
-       'PORT': '5432',
     }
 }
 
