@@ -8,5 +8,4 @@ tzdata
 wheel               
 whitenoise        
 pillow  
-psycopg2
 xhtml2pdf
